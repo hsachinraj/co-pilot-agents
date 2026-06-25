@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Agent Platform Competitive Intelligence: June 8–22, 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 1.65;
+      color: #1a1a2e;
+      background: #f7f8fc;
+    }
+    a { color: #120459; text-decoration: none; border-bottom: 1px solid #c8b9f0; }
+    a:hover { color: #5b21b6; }
+
+    /* ── Header ── */
+    .report-header {
+      background: linear-gradient(135deg, #120459 0%, #2d1b8e 60%, #4f2dc8 100%);
+      color: #fff;
+      padding: 36px 48px 28px;
+    }
+    .report-header .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 3px 14px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .report-header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .report-header .meta {
+      font-size: 12px;
+      opacity: 0.75;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .report-header .meta span { display: flex; align-items: center; gap: 5px; }
+
+    /* ── Layout ── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 32px 24px 64px; }
+
+    /* ── Source Bar ── */
+    .source-bar {
+      background: #fff;
+      border: 1px solid #e0e0f0;
+      border-radius: 8px;
+      padding: 14px 20px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 13px;
+    }
+    .source-bar .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .source-bar strong { color: #120459; }
+
+    /* ── Section Headings ── */
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #120459;
+      border-bottom: 2px solid #120459;
+      padding-bottom: 8px;
+      margin: 40px 0 20px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #120459;
+      margin: 24px 0 10px;
+    }
+    h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #2d1b8e;
+      margin: 14px 0 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Vendor Cards ── */
+    .vendor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(520px, 1fr));
+      gap: 22px;
+      margin-top: 8px;
+    }
+    .vendor-card {
+      background: #fff;
+      border: 1px solid #e0e0f0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(18,4,89,0.06);
+    }
+    .vendor-card .vc-header {
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e8e8f8;
+    }
+    .vendor-card .vc-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #120459;
+    }
+    .vendor-card .vc-logo {
+      font-size: 22px;
+    }
+    .vendor-card .vc-body { padding: 16px 20px; }
+
+    /* ── Update blocks ── */
+    .update-block {
+      background: #fafafe;
+      border-left: 3px solid #120459;
+      border-radius: 0 6px 6px 0;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+    }
+    .update-block.critical { border-left-color: #dc2626; background: #fff5f5; }
+    .update-block.warning  { border-left-color: #d97706; background: #fffbf0; }
+    .update-block.positive { border-left-color: #16a34a; background: #f0fdf4; }
+    .update-block .ub-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #120459;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+    }
+    .update-block .ub-title .tag {
+      font-size: 10px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 1px 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .tag.ga       { background: #dcfce7; color: #15803d; }
+    .tag.preview  { background: #dbeafe; color: #1d4ed8; }
+    .tag.roadmap  { background: #f3e8ff; color: #7c3aed; }
+    .tag.announce { background: #fef3c7; color: #92400e; }
+    .tag.deprecated { background: #fee2e2; color: #991b1b; }
+    .tag.suspended { background: #fee2e2; color: #991b1b; }
+
+    .update-block .ub-date {
+      font-size: 11px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+    .update-block .ub-desc { font-size: 13px; color: #333; margin-bottom: 8px; }
+    .update-block ul { padding-left: 18px; margin: 4px 0 8px; }
+    .update-block li { font-size: 12.5px; color: #444; margin-bottom: 3px; }
+
+    .seller-box {
+      background: #ede9fe;
+      border: 1px solid #c4b5fd;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-top: 10px;
+    }
+    .seller-box .sb-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: #5b21b6;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 6px;
+    }
+    .seller-box table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .seller-box td { padding: 3px 6px; vertical-align: top; }
+    .seller-box td:first-child { font-weight: 600; color: #4c1d95; width: 110px; white-space: nowrap; }
+    .risk-high   { color: #dc2626; font-weight: 700; }
+    .risk-medium { color: #d97706; font-weight: 700; }
+    .risk-low    { color: #16a34a; font-weight: 700; }
+
+    .sources-row {
+      font-size: 11px;
+      margin-top: 8px;
+      color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .sources-row .src-label { font-weight: 600; color: #120459; }
+    .sources-row a {
+      color: #4f46e5;
+      border-bottom-color: #c7d2fe;
+      font-size: 11px;
+    }
+    .src-official { background: #e0f2fe; color: #0369a1; border-radius: 3px; padding: 0 5px; font-size: 10px; font-weight: 600; }
+    .src-third   { background: #fef9c3; color: #854d0e; border-radius: 3px; padding: 0 5px; font-size: 10px; font-weight: 600; }
+
+    /* ── Takeaways ── */
+    .takeaways-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .takeaway-card {
+      background: #fff;
+      border: 1px solid #e0e0f0;
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 12px;
+    }
+    .takeaway-card .tc-num {
+      font-size: 22px;
+      font-weight: 700;
+      color: #c4b5fd;
+      flex-shrink: 0;
+      width: 28px;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .takeaway-card .tc-title { font-size: 13px; font-weight: 700; color: #120459; margin-bottom: 5px; }
+    .takeaway-card .tc-desc  { font-size: 12.5px; color: #444; }
+
+    /* ── Deal Risk Table ── */
+    .risk-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #e0e0f0;
+      border-radius: 10px;
+      overflow: hidden;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    .risk-table thead { background: #120459; color: #fff; }
+    .risk-table thead th { padding: 12px 16px; text-align: left; font-size: 12px; font-weight: 600; letter-spacing: 0.3px; }
+    .risk-table tbody tr:nth-child(even) { background: #f9f9ff; }
+    .risk-table td { padding: 11px 16px; vertical-align: top; border-bottom: 1px solid #eee; }
+    .risk-table td:first-child { font-weight: 600; color: #120459; }
+
+    /* ── Watch List ── */
+    .watch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+    .watch-card {
+      background: #fff;
+      border: 1px solid #e0e0f0;
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    .watch-card .wc-vendor { font-size: 14px; font-weight: 700; color: #120459; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #e8e8f8; }
+    .watch-card ul { padding-left: 16px; }
+    .watch-card li { font-size: 12.5px; color: #444; margin-bottom: 5px; }
+
+    /* ── Footer ── */
+    .report-footer {
+      border-top: 1px solid #e0e0f0;
+      padding: 20px 0 0;
+      margin-top: 48px;
+      font-size: 11px;
+      color: #888;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ── Callout ── */
+    .callout {
+      background: #fff8e1;
+      border: 1px solid #fdd835;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 13px;
+      margin: 20px 0;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .callout .c-icon { font-size: 18px; flex-shrink: 0; }
+    .callout strong { color: #7b5e00; }
+  </style>
+</head>
+<body>
+
+<!-- ════ HEADER ════ -->
+<div class="report-header">
+  <div class="badge">Microsoft Competitive Intelligence · AI Agent Platforms</div>
+  <h1>AI Agent Platform Competitive Intelligence<br/>June 8–22, 2026</h1>
+  <div class="meta">
+    <span>📅 Scan Date: June 22, 2026</span>
+    <span>⏱ Timeframe: Last 14 Days</span>
+    <span>🎯 Audience: Microsoft Sellers &amp; Solution Architects</span>
+    <span>📊 Vendors: OpenAI · AWS · Google · Anthropic</span>
+  </div>
+</div>
+
+<!-- ════ BODY ════ -->
+<div class="container">
+
+  <!-- Source Quality -->
+  <div class="source-bar">
+    <span class="icon">📂</span>
+    <div>
+      <strong>Timeframe &amp; Source Quality</strong> — Last 14 days (June 8–22, 2026).
+      All capability claims sourced from <strong>official first-party sources</strong>: vendor blogs, release notes, product pages, and API changelogs.
+      Supplementary context from the <code>market-scan-2026-06-22.md</code> workspace document (AWS and Google data agents detail).
+      Each claim includes a direct source link. <span class="src-official">OFFICIAL</span> = first-party vendor source.
+      Third-party reporting not used in this scan; no reliable recent third-party sources were needed.
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="c-icon">⚠️</span>
+    <div>
+      <strong>Breaking Development:</strong> On June 12, 2026, the US government issued an export control directive requiring Anthropic to suspend all access to Claude Fable 5 and Claude Mythos 5 for any foreign national, effectively disabling these models globally.
+      Anthropic has publicly disagreed with the directive and is working to restore access. All other Anthropic models remain available.
+      This is a material procurement risk signal — see Anthropic section and Deal Risk Assessment below.
+    </div>
+  </div>
+
+  <!-- ════ VENDOR UPDATES ════ -->
+  <h2>Vendor Updates</h2>
+  <div class="vendor-grid">
+
+    <!-- ── OpenAI ── -->
+    <div class="vendor-card">
+      <div class="vc-header">
+        <span class="vc-name">OpenAI</span>
+        <span class="vc-logo">🤖</span>
+      </div>
+      <div class="vc-body">
+
+        <!-- 1 Enterprise Spend Controls -->
+        <div class="update-block positive">
+          <div class="ub-title">
+            ChatGPT Enterprise: Usage Analytics &amp; Spend Controls
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 18, 2026</div>
+          <div class="ub-desc">
+            OpenAI introduced granular enterprise spend management for ChatGPT Enterprise:
+          </div>
+          <ul>
+            <li>Real-time credit usage analytics in Global Admin Console — per user, product, and model</li>
+            <li>Per-group and per-role credit spend limits with individual override capability</li>
+            <li>Budget request workflow: users can request more credits with business context; admins approve without global limit increases</li>
+            <li>Unified Cost API for programmatic export into internal BI systems</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure Cost Management + AI Studio offer similar per-resource and per-deployment cost tracking; Azure extends this to the broader cloud estate. OpenAI's controls are ChatGPT-native only — no cross-cloud view.</td></tr>
+              <tr><td>Talking Point</td><td>"Azure AI gives you one pane for ALL cloud spend — compute, storage, and AI — not just one vendor's product."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW</td></tr>
+              <tr><td>Friction</td><td>Proof point for Microsoft: enterprise AI governance is Azure's default, not a feature customers must activate.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://openai.com/index/chatgpt-enterprise-spend-controls/" target="_blank">OpenAI — Enterprise Spend Controls (Jun 18, 2026)</a>
+          </div>
+        </div>
+
+        <!-- 2 OpenAI Partner Network -->
+        <div class="update-block positive">
+          <div class="ub-title">
+            OpenAI Partner Network — $150M Ecosystem Program
+            <span class="tag announce">ANNOUNCEMENT</span>
+          </div>
+          <div class="ub-date">June 14, 2026</div>
+          <div class="ub-desc">
+            OpenAI launched a formal partner ecosystem program — targeting 300,000 certified consultants by end of 2026, with $150M investment backing.
+          </div>
+          <ul>
+            <li>Three tiers: Select, Advanced, Elite — rated on sales performance, technical capability, and deployment experience</li>
+            <li>Specializations planned: Codex, cybersecurity, agents</li>
+            <li>Forward Deployed Experts program: co-deployment with OpenAI FDE teams</li>
+            <li>Launch partners: Accenture, Bain, BCG, McKinsey, PwC</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Microsoft has a massive, established SI partner ecosystem (MSFT Partner Network) with 400,000+ partners globally and decades of training infrastructure. OpenAI is building from scratch.</td></tr>
+              <tr><td>Talking Point</td><td>"Our partner ecosystem is already at scale. OpenAI is investing $150M to catch up to what Microsoft already has."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM</td></tr>
+              <tr><td>Friction</td><td>Top SIs (Accenture, Deloitte, PwC) are now dual-qualified in both OpenAI and Anthropic networks — monitor which certification they lead with in deals.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://openai.com/index/introducing-openai-partner-network/" target="_blank">OpenAI — Partner Network (Jun 14, 2026)</a>
+          </div>
+        </div>
+
+        <!-- 3 Samsung deployment -->
+        <div class="update-block">
+          <div class="ub-title">
+            Samsung Electronics — Enterprise ChatGPT + Codex Deployment
+            <span class="tag announce">ANNOUNCEMENT</span>
+          </div>
+          <div class="ub-date">June 21, 2026</div>
+          <div class="ub-desc">
+            Samsung brings ChatGPT and Codex to employees globally — a high-profile enterprise expansion validating OpenAI's direct enterprise motion.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Samsung is a Microsoft 365 customer. OpenAI's direct enterprise reach into Codex competes with GitHub Copilot Enterprise + Azure AI in developer workflows.</td></tr>
+              <tr><td>Talking Point</td><td>"GitHub Copilot is natively integrated into the tools your engineers already use — IDE, PR workflow, CI/CD. ChatGPT Enterprise requires a separate deployment layer."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/" target="_blank">OpenAI — Samsung Electronics (Jun 21, 2026)</a>
+          </div>
+        </div>
+
+        <!-- 4 API: moderation + web image search -->
+        <div class="update-block">
+          <div class="ub-title">
+            API: Moderation Scores in Responses API + Web Image Search
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 4 &amp; June 9, 2026</div>
+          <div class="ub-desc">
+            Two capability additions to the Responses API: (1) inline moderation scores for input and output content in the same API call; (2) web search now returns image results alongside text results for grounded visual agent responses.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure Content Safety and Bing Grounding offer equivalent capabilities within Azure AI Foundry. OpenAI's inline moderation is tighter on developer DX; Azure's advantage is enterprise compliance provenance.</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW</td></tr>
+              <tr><td>Talking Point</td><td>"Azure Content Safety integrates with your existing compliance controls — not a new standalone API."</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Sources:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://developers.openai.com/api/docs/changelog" target="_blank">OpenAI API Changelog (Jun 2026)</a>
+          </div>
+        </div>
+
+        <!-- 5 Deprecation -->
+        <div class="update-block warning">
+          <div class="ub-title">
+            Deprecation: Evals Platform, Agent Builder, Reusable Prompts
+            <span class="tag deprecated">DEPRECATED</span>
+          </div>
+          <div class="ub-date">June 3, 2026</div>
+          <div class="ub-desc">
+            OpenAI deprecated the standalone Evals platform, the visual Agent Builder, and reusable prompt objects. Migration guidance published on the deprecations page. Agent Builder was launched only in October 2025.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>Friction</td><td>Customers who adopted Agent Builder in H2 2025 now face migration. Creates short-term disruption and reinforces OpenAI's rapid platform churn.</td></tr>
+              <tr><td>Talking Point</td><td>"Azure AI Foundry offers a stable, enterprise-grade agent orchestration platform that doesn't deprecate core tooling within 8 months of launch."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW (risk to OpenAI, not Microsoft)</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://developers.openai.com/api/docs/changelog" target="_blank">OpenAI API Changelog (Jun 3, 2026)</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── AWS ── -->
+    <div class="vendor-card">
+      <div class="vc-header">
+        <span class="vc-name">AWS</span>
+        <span class="vc-logo">☁️</span>
+      </div>
+      <div class="vc-body">
+
+        <!-- AgentCore Harness GA -->
+        <div class="update-block positive">
+          <div class="ub-title">
+            Amazon Bedrock AgentCore Harness — GA
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 18, 2026</div>
+          <div class="ub-desc">
+            AWS released AgentCore Harness GA — a "deploy in 2 API calls" agent runtime for production use. Key capabilities:
+          </div>
+          <ul>
+            <li><strong>Runtime:</strong> Deploy any LangChain, OpenAI SDK, Claude SDK, or Strands agent via <code>CreateHarness</code> + <code>InvokeHarness</code></li>
+            <li><strong>Built-in Memory:</strong> Semantic + summarization memory across sessions</li>
+            <li><strong>Multi-model switching:</strong> Switch models mid-session without context loss (Claude, GPT-5.5, Gemini, LiteLLM)</li>
+            <li><strong>Code interpreter + browser sandbox:</strong> Secure, ephemeral execution environments</li>
+            <li><strong>Unified CloudWatch observability:</strong> Per-step traces, tool call logs</li>
+            <li><strong>Pricing:</strong> $0.0895/vCPU-hour runtime, $1/1K memory events, no harness fee</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure AI Foundry Agent Service + Semantic Kernel offer similar agent orchestration, but AWS's "2 API call" framing and transparent per-vCPU pricing is a developer DX differentiator. Azure's edge: native M365 data connectors, Azure OpenAI Service parity, integrated Azure Monitor.</td></tr>
+              <tr><td>Talking Point</td><td>"AgentCore is framework-agnostic but AWS-hosted. Azure AI Foundry integrates agents directly with your M365 tenant, SharePoint data, and enterprise identity — no egress, no custom connectors."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-high">HIGH</td></tr>
+              <tr><td>Friction</td><td>AWS's 2-API-call simplicity and transparent pricing is a compelling pitch for dev teams already on AWS. Counter with Azure's data + identity integration story.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-is-now-generally-available-go-from-idea-to-production-grade-agent-in-minutes/" target="_blank">AWS Blog — AgentCore Harness GA (Jun 18, 2026)</a>
+          </div>
+        </div>
+
+        <!-- Web Search on AgentCore -->
+        <div class="update-block">
+          <div class="ub-title">
+            Web Search on Amazon Bedrock AgentCore
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 19, 2026</div>
+          <div class="ub-desc">
+            Native web search tool within the AWS environment (<code>agentcore_web_search</code>) — fully managed, zero data egress, grounded in current web knowledge.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure AI Foundry agents use Bing Grounding for web search — a Microsoft-native, enterprise-filtered search API with compliance controls. AWS's tool is cloud-native but Bing's enterprise filtering, SafeSearch controls, and Microsoft Search integration are differentiated.</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW</td></tr>
+              <tr><td>Talking Point</td><td>"Bing Grounding gives your agents access to the same enterprise-filtered, copyright-compliant web index used by Microsoft 365 Copilot."</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://aws.amazon.com/blogs/aws/announcing-web-search-on-amazon-bedrock-agentcore-ground-your-ai-agents-in-current-accurate-web-knowledge/" target="_blank">AWS Blog — Web Search on AgentCore (Jun 19, 2026)</a>
+          </div>
+        </div>
+
+        <!-- Managed Knowledge Bases -->
+        <div class="update-block">
+          <div class="ub-title">
+            Amazon Bedrock Managed Knowledge Bases — GA
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 17, 2026</div>
+          <div class="ub-desc">
+            Fully managed RAG pipeline: native connectors for enterprise data sources, Smart Parsing for multi-format ingestion (PDFs, spreadsheets, images), Agentic Retriever for multi-hop complex queries, pre-integrated with AgentCore Gateway. No infrastructure management.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure AI Search + Azure AI Foundry Knowledge Bases offer equivalent RAG capabilities with deeper M365/SharePoint integration. AWS's edge: tighter AgentCore integration. Azure's edge: native connector to Teams, SharePoint, OneDrive without egress.</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM</td></tr>
+              <tr><td>Talking Point</td><td>"Azure AI Search integrates with your Microsoft 365 data without moving it. Your SharePoint documents become agent-accessible without leaving your tenant."</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accurate-enterprise-ai-applications/" target="_blank">AWS Blog — Managed Knowledge Bases (Jun 17, 2026)</a>
+          </div>
+        </div>
+
+        <!-- Guardrails -->
+        <div class="update-block">
+          <div class="ub-title">
+            Bedrock Guardrails InvokeGuardrailChecks API — Resourceless Safety
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 16, 2026</div>
+          <div class="ub-desc">
+            New resourceless safety API enabling per-turn safety decisions without requiring a Guardrails resource. Returns numeric severity/confidence scores (0–1) for custom threshold logic; separates prompt attack detection as an independent check. Supports any framework, any model.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure AI Content Safety offers similar per-turn content filtering with severity scoring. Azure's advantage: unified governance model across M365, Azure, and GitHub Copilot.</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW</td></tr>
+              <tr><td>Talking Point</td><td>"Azure Content Safety + Microsoft Purview give you one governance model from data to AI output — not a standalone safety API you need to integrate separately."</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://aws.amazon.com/blogs/machine-learning/safeguard-your-agentic-ai-applications-with-the-amazon-bedrock-guardrails-invokeguardrailchecks-api/" target="_blank">AWS Blog — Guardrails API (Jun 16, 2026)</a>
+          </div>
+        </div>
+
+        <!-- OpenAI on Bedrock -->
+        <div class="update-block warning">
+          <div class="ub-title">
+            OpenAI GPT-5.5 &amp; GPT-5.4 Now GA on Amazon Bedrock
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 1, 2026 (confirmed GA per Bedrock homepage)</div>
+          <div class="ub-desc">
+            OpenAI models are now generally available in Amazon Bedrock through an OpenAI-compatible Responses API endpoint. AWS prominently features this as a headline capability ("OpenAI GPT-5.5, GPT-5.4 are now Generally Available"). AWS also launched Bedrock Managed Agents powered by OpenAI, combining OpenAI frontier models with AWS infrastructure, built-in memory, and security.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure OpenAI Service remains the <strong>exclusive enterprise cloud for Azure-hosted OpenAI models</strong> with enterprise SLA, VNet integration, and private endpoint. Bedrock's OpenAI support is API-compatible but does not carry Azure's enterprise commitments, SOC 2 data handling, or Microsoft's partnership terms.</td></tr>
+              <tr><td>Talking Point</td><td>"OpenAI on Azure is the official enterprise deployment — with Microsoft's SLA, your data never used for training, and VNet isolation. Bedrock's OpenAI integration is API-compatible, not enterprise-committed."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-high">HIGH</td></tr>
+              <tr><td>Friction</td><td>AWS positioning as a multi-model platform (OpenAI + Claude + Gemini) vs. Azure's deeper OpenAI strategic partnership. Watch for customers using "model diversity" as a reason to evaluate Bedrock.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Sources:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://aws.amazon.com/bedrock/" target="_blank">Amazon Bedrock homepage (Jun 2026)</a> ·
+            <a href="https://developers.openai.com/api/docs/changelog" target="_blank">OpenAI Changelog — Jun 1, 2026</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Google ── -->
+    <div class="vendor-card">
+      <div class="vc-header">
+        <span class="vc-name">Google Cloud</span>
+        <span class="vc-logo">🔵</span>
+      </div>
+      <div class="vc-body">
+
+        <!-- Data Agents Suite -->
+        <div class="update-block positive">
+          <div class="ub-title">
+            Google Cloud Data Agents Suite — Major Expansion
+            <span class="tag ga">GA (select)</span>
+            <span class="tag preview">PREVIEW (select)</span>
+          </div>
+          <div class="ub-date">June 16, 2026</div>
+          <div class="ub-desc">
+            Google released a major suite of data-specialized agents within its Agentic Data Cloud:
+          </div>
+          <ul>
+            <li><strong>Data Engineering Agent (GA):</strong> Translates natural language to optimized SQL/Python for BigQuery + Dataflow; proactively fixes pipeline failures; suggests schema improvements</li>
+            <li><strong>Data Science Agent (Preview):</strong> Accelerates ML model development workflows</li>
+            <li><strong>Database Observability Agent (Preview):</strong> Multi-turn remediation for fleet health issues</li>
+            <li><strong>Looker Dashboard Agent (Preview):</strong> Conversational interaction with business dashboards</li>
+            <li><strong>Conversational Analytics in Gemini Enterprise (Preview):</strong> Business user self-service data queries</li>
+            <li><strong>Managed MCP Servers (GA):</strong> Fully managed MCP endpoints for AlloyDB, Spanner, Cloud SQL, Bigtable, Firestore — no hosting required. MCP Toolbox for Databases v1.0 GA.</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Microsoft Fabric + Azure AI Foundry enable similar data agent scenarios, with Fabric integrating Power BI, OneLake, and Azure OpenAI natively. Google's edge: tighter vertical integration with BigQuery/Looker stack. Microsoft's edge: M365 data estate + Teams + SharePoint grounding.</td></tr>
+              <tr><td>Talking Point</td><td>"Microsoft Fabric unifies your entire data + BI + AI stack — OneLake, Synapse, Power BI, and Azure AI — without egress between systems. Google's agents only ground in GCP-hosted data."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-high">HIGH (for BigQuery-native customers)</td></tr>
+              <tr><td>Friction</td><td>Customers with large BigQuery or Looker investments are strong targets for Google's data agents. Qualify data estate before pitching Azure.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://cloud.google.com/blog/products/data-analytics/new-data-agents-across-the-agentic-data-cloud" target="_blank">Google Cloud Blog — Data Agents (Jun 16, 2026)</a>
+          </div>
+        </div>
+
+        <!-- Claude Fable 5 on GCP -->
+        <div class="update-block">
+          <div class="ub-title">
+            Claude Fable 5 Available on Google Cloud (Vertex AI)
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June ~9, 2026</div>
+          <div class="ub-desc">
+            Following Anthropic's June 9 launch of Claude Fable 5, Google Cloud made it available through Vertex AI / Gemini Enterprise. Note: Fable 5 was subsequently suspended on June 12 due to US government export control directive — current availability on Google Cloud is uncertain.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Claude is available in Azure AI Foundry model catalog as well. The suspension of Fable 5/Mythos 5 affects Google Cloud and Anthropic API equally — Azure's Azure OpenAI Service models are unaffected.</td></tr>
+              <tr><td>Talking Point</td><td>"Azure AI Foundry provides access to the full Microsoft + OpenAI model portfolio with enterprise SLA — and is unaffected by the Anthropic export control disruption."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW (suspension reduces Google's edge here)</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://cloud.google.com/blog/products/ai-machine-learning/cloud-fable-5-on-google-cloud" target="_blank">Google Cloud Blog — Claude Fable 5 on Google Cloud (Jun 2026)</a>
+          </div>
+        </div>
+
+        <!-- GKE Inference Gateway -->
+        <div class="update-block">
+          <div class="ub-title">
+            GKE Inference Gateway — 92% Faster AI Responses
+            <span class="tag announce">REPORT</span>
+          </div>
+          <div class="ub-date">June 2026</div>
+          <div class="ub-desc">
+            Google published data showing GKE Inference Gateway with prefix caching delivers up to 92% faster AI response times for inference-heavy workloads. Targets enterprise customers running self-hosted models on Kubernetes.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure Kubernetes Service (AKS) + Azure AI Inference SDK offer GPU-optimized inference. Google's 92% claim is for GKE-specific prefix caching — validate whether customer is GKE-native before conceding the point.</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM (for self-hosted inference workloads)</td></tr>
+              <tr><td>Talking Point</td><td>"AKS with Azure Machine Learning Inference offers enterprise-grade SLA and GPU scheduling across H100/A100 fleets — with Azure Monitor integration you already have."</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://cloud.google.com/blog/products/containers-kubernetes/gke-inference-gateway-prefix-caching-accelerates-ai-inference" target="_blank">Google Cloud Blog — GKE Inference Gateway (Jun 2026)</a>
+          </div>
+        </div>
+
+        <!-- I/O context (slightly outside window but highly relevant) -->
+        <div class="update-block" style="border-left-color:#888; background:#f9f9f9;">
+          <div class="ub-title" style="color:#555;">
+            🗓 Context: Google I/O (May 20, 2026) — Still Ramping
+            <span class="tag preview">PREVIEW → GA rollout active</span>
+          </div>
+          <div class="ub-date">May 20, 2026 (outside 14-day window — included for context; capabilities still rolling out)</div>
+          <div class="ub-desc">
+            Key announcements still ramping into GA and Preview in the current window:
+          </div>
+          <ul>
+            <li><strong>Gemini 3.5 Flash (GA):</strong> Outperforms Gemini 3.1 Pro on Terminal-Bench 2.1 (76.2%), strongest agentic/coding model in Gemini family</li>
+            <li><strong>Managed Agents API on Agent Platform:</strong> Spin up custom agents in one API call — inherits Agent Platform enterprise governance/security</li>
+            <li><strong>Gemini Spark (rolling out):</strong> 24/7 personal AI agent for Gemini Enterprise — background async tasks, Workspace + connector integration, ephemeral VM isolation</li>
+            <li><strong>Google Antigravity 2.0 Desktop App + CLI:</strong> Standalone agent orchestration workspace for enterprise builders; now GA with Google Cloud credential login</li>
+            <li><strong>CodeMender:</strong> AI code security agent (via Agent Platform) — autonomous vulnerability detection + patch application, developer approval required</li>
+            <li><strong>Gemini Enterprise Agent Platform:</strong> Evolution of Vertex AI — Agent Identity (cryptographic agent ID), Agent Gateway (DLP-enforced), Model Armor (prompt injection / data leakage protection)</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Gemini Enterprise directly competes with Microsoft 365 Copilot + Azure AI Foundry. Gemini Spark's 24/7 async personal agent mirrors M365 Copilot's agent capabilities. Google's Agent Identity + Agent Gateway mirror Azure's Managed Identity + API Management for agents.</td></tr>
+              <tr><td>Talking Point</td><td>"Microsoft 365 Copilot is already in your employees' inboxes, Teams, and Word — Gemini Spark requires a new deployment and connector setup. Copilot meets workers where they already are."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-high">HIGH</td></tr>
+              <tr><td>Friction</td><td>Google's "Gemini Enterprise" branding mirrors Microsoft's "M365 Copilot + Azure" story closely. Customers evaluating personal AI agents should be shown Copilot's M365 depth vs. Spark's connector dependency.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Sources:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud" target="_blank">Google Cloud — I/O 2026 Recap (May 20, 2026)</a> ·
+            <a href="https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development" target="_blank">Gemini Enterprise Platform (Apr 23, 2026)</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Anthropic ── -->
+    <div class="vendor-card">
+      <div class="vc-header">
+        <span class="vc-name">Anthropic</span>
+        <span class="vc-logo">🦋</span>
+      </div>
+      <div class="vc-body">
+
+        <!-- CRITICAL: Export Control -->
+        <div class="update-block critical">
+          <div class="ub-title">
+            ⚠️ CRITICAL: US Government Suspends Fable 5 &amp; Mythos 5
+            <span class="tag suspended">SUSPENDED</span>
+          </div>
+          <div class="ub-date">June 12, 2026</div>
+          <div class="ub-desc">
+            The US government issued an export control directive requiring Anthropic to immediately suspend access to Claude Fable 5 and Claude Mythos 5 for all foreign nationals — effectively disabling these models globally for all customers. Key facts:
+          </div>
+          <ul>
+            <li>Government cited concern about a potential jailbreak method; Anthropic publicly disagrees — characterizes the disclosed jailbreak as narrow and already available from other models including GPT-5.5</li>
+            <li>All other Anthropic models (Opus 4.8, Sonnet, Haiku) remain available</li>
+            <li>Fable 5 had been live for only 3 days before suspension</li>
+            <li>Anthropic is working to restore access; no timeline published</li>
+            <li>Anthropic's statement: if this standard were applied across the industry, "it would essentially halt all new model deployments for all frontier model providers"</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Azure OpenAI Service operates under MSFT's established export compliance framework with DoD/FedRAMP infrastructure. Geopolitical model suspension risk is substantially lower for Azure-hosted models.</td></tr>
+              <tr><td>Talking Point</td><td>"Azure AI Foundry has never had a model suspended by government directive. Our compliance infrastructure — FedRAMP High, DoD IL5, ITAR support — is built for regulated and global deployment from day one."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-high">HIGH (regulatory trust risk for Anthropic; opportunity for Microsoft)</td></tr>
+              <tr><td>Opportunity</td><td>Any customer evaluating Claude Fable 5 or Mythos 5 is now a live re-engagement opportunity. Lead with Azure's regulatory stability and model availability guarantees.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Sources:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank">Anthropic — Government Directive Statement (Jun 12, 2026)</a>
+          </div>
+        </div>
+
+        <!-- Claude Fable 5 Launch -->
+        <div class="update-block positive">
+          <div class="ub-title">
+            Claude Fable 5 &amp; Mythos 5 — Launched (Now Suspended)
+            <span class="tag ga">GA → SUSPENDED</span>
+          </div>
+          <div class="ub-date">June 9, 2026</div>
+          <div class="ub-desc">
+            Anthropic launched Claude Fable 5 (general release) and Claude Mythos 5 (restricted, via Project Glasswing) — state-of-the-art agentic capabilities:
+          </div>
+          <ul>
+            <li>Top-ranked on nearly all capability benchmarks as of launch date</li>
+            <li>Stripe case study: 50M-line Ruby migration in 1 day vs. 2+ months for human team</li>
+            <li>Persistent file-based memory improves long-horizon task performance 3× vs. Opus 4.8</li>
+            <li>New safety classifiers: auto-fallback to Claude Opus 4.8 for cyber/bio/distillation topics (&lt;5% of sessions)</li>
+            <li>30-day data retention for Mythos-class models (no model training use)</li>
+            <li>Pricing: $10/M input tokens, $50/M output tokens (half the price of Mythos Preview)</li>
+            <li>Available on the Claude API, Google Vertex AI, and AWS Bedrock (pre-suspension)</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>Claude Fable 5 was positioned as the most capable agentic model available — surpassing GPT-5.5 on some coding benchmarks. Now suspended, it creates a capability gap for Anthropic customers and reinforces Azure OpenAI's model stability.</td></tr>
+              <tr><td>Talking Point</td><td>"GPT-5.5 on Azure has no suspension risk and is available with enterprise SLA today. Azure is the stable, enterprise-committed path for frontier model access."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM (when/if restored — re-evaluate deal risk)</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank">Anthropic — Claude Fable 5 &amp; Mythos 5 (Jun 9, 2026)</a>
+          </div>
+        </div>
+
+        <!-- Partner Network -->
+        <div class="update-block">
+          <div class="ub-title">
+            Claude Partner Network: Services Track &amp; Partner Hub
+            <span class="tag ga">GA</span>
+          </div>
+          <div class="ub-date">June 3, 2026</div>
+          <div class="ub-desc">
+            Anthropic formalized its partner ecosystem with a structured Services Track (3 tiers: Select, Preferred, Global Premier) and the Claude Partner Hub — a portal showing real-time partner standing. Backed by $100M investment. Over 40,000 firms applied; 10,000+ consultants certified.
+            Key enterprise SI participants: Accenture (30K professionals), Cognizant (350K associates), Deloitte (470K people), KPMG (276K), Infosys, PwC.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>The same SIs (Accenture, Deloitte, PwC) are now dual-registered in Microsoft's partner network AND Anthropic's. Monitor which certification they lead with during customer engagements.</td></tr>
+              <tr><td>Talking Point</td><td>"Our Microsoft AI Cloud Partner Program has 400,000+ globally certified partners with decades of delivery track record. Partners new to Anthropic are learning on the fly — and now facing model suspension risk."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM</td></tr>
+              <tr><td>Opportunity</td><td>Engage SI partners on Microsoft's incentives (co-sell, ACO, Azure credits) before they commit to Anthropic-led deals.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://www.anthropic.com/news/services-track-partner-hub" target="_blank">Anthropic — Services Track &amp; Partner Hub (Jun 3, 2026)</a>
+          </div>
+        </div>
+
+        <!-- TCS + DXC partnerships -->
+        <div class="update-block">
+          <div class="ub-title">
+            Enterprise Partnerships: TCS, DXC for Regulated Industries
+            <span class="tag announce">ANNOUNCEMENT</span>
+          </div>
+          <div class="ub-date">June 11–12, 2026</div>
+          <div class="ub-desc">
+            Two major regulated-industry partnerships announced this week:
+          </div>
+          <ul>
+            <li><strong>TCS (Jun 12):</strong> 50,000 TCS employees get Claude access across 56 countries; TCS will build Claude-powered products for financial services, healthcare, and public sector clients</li>
+            <li><strong>DXC Technology (Jun 11):</strong> Alliance to integrate Claude into systems used by banks, airlines, and other regulated industries</li>
+          </ul>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>vs. Azure</td><td>TCS and DXC are also major Microsoft Azure delivery partners. Anthropic's regulated-industry push competes directly with Azure's FedRAMP, HIPAA, PCI-certified AI services. The June 12 suspension may have paused Fable 5-powered workloads these partners were planning to deploy.</td></tr>
+              <tr><td>Talking Point</td><td>"TCS builds on Azure for regulated workloads — our compliance certifications (FedRAMP High, HIPAA, ISO 27001) are already in place. Anthropic's export control disruption means these regulated-industry deployments now have model availability risk."</td></tr>
+              <tr><td>Deal Risk</td><td class="risk-medium">MEDIUM</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Sources:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://www.anthropic.com/news/tcs-anthropic-partnership" target="_blank">Anthropic — TCS Partnership (Jun 12)</a> ·
+            <a href="https://www.anthropic.com/news/dxc-anthropic-alliance" target="_blank">DXC Alliance (Jun 11)</a>
+          </div>
+        </div>
+
+        <!-- Seoul Office -->
+        <div class="update-block">
+          <div class="ub-title">
+            Anthropic Opens Seoul Office — Korean AI Ecosystem
+            <span class="tag announce">ANNOUNCEMENT</span>
+          </div>
+          <div class="ub-date">June 17, 2026</div>
+          <div class="ub-desc">
+            Anthropic opened an office in Seoul and announced new partnerships across the Korean AI ecosystem — extending its international footprint.
+          </div>
+          <div class="seller-box">
+            <div class="sb-title">💼 Why It Matters to Microsoft Sellers</div>
+            <table>
+              <tr><td>Deal Risk</td><td class="risk-low">LOW</td></tr>
+              <tr><td>Note</td><td>Microsoft's Korea presence (Azure Korea Central + Korea South) is well-established. Monitor for Anthropic pricing strategies in APAC that could undercut Azure AI pricing in the region.</td></tr>
+            </table>
+          </div>
+          <div class="sources-row">
+            <span class="src-label">Source:</span>
+            <span class="src-official">OFFICIAL</span>
+            <a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank">Anthropic — Seoul Office (Jun 17, 2026)</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /vendor-grid -->
+
+
+  <!-- ════ COMPETITIVE TAKEAWAYS ════ -->
+  <h2>Competitive Takeaways</h2>
+  <div class="takeaways-grid">
+
+    <div class="takeaway-card">
+      <div class="tc-num">1</div>
+      <div>
+        <div class="tc-title">AWS Is Winning the "Time to Production" Narrative</div>
+        <div class="tc-desc">AgentCore Harness GA ("deploy in 2 API calls"), Managed Knowledge Bases, and native web search form a complete, low-friction agent stack. AWS's simplicity pitch is resonating with dev teams. Microsoft must counter with Azure's integration depth (M365, Teams, SharePoint) — not just deployment speed.</div>
+      </div>
+    </div>
+
+    <div class="takeaway-card">
+      <div class="tc-num">2</div>
+      <div>
+        <div class="tc-title">Anthropic's Regulatory Suspension Is an Unprecedented Market Signal</div>
+        <div class="tc-desc">No frontier model provider has previously had a GA model suspended by government export control. This creates material procurement risk for any enterprise evaluating Fable 5/Mythos 5 as their primary agentic model. Microsoft sellers should proactively re-engage these accounts with Azure's regulatory stability narrative.</div>
+      </div>
+    </div>
+
+    <div class="takeaway-card">
+      <div class="tc-num">3</div>
+      <div>
+        <div class="tc-title">Every Vendor Is Now Building a Partner Ecosystem</div>
+        <div class="tc-desc">OpenAI ($150M, 300K consultants), Anthropic ($100M, 40K firms), Google (Agent Gallery, SI agents), AWS (forward deployed) — all racing to capture the SI delivery channel. Microsoft's 400,000+ partner network remains the largest, but dual certification is now table-stakes for top SIs. Engage partners early before deals are Anthropic- or OpenAI-led.</div>
+      </div>
+    </div>
+
+    <div class="takeaway-card">
+      <div class="tc-num">4</div>
+      <div>
+        <div class="tc-title">Multi-Model Agility Is Becoming Standard; Lock-In Is Decreasing</div>
+        <div class="tc-desc">AWS Bedrock (now hosting OpenAI + Claude + Gemini), Google Vertex, and Azure AI Foundry all offer multi-model catalogs. Customers will choose platforms, not just models. Microsoft's advantage: the native Microsoft 365 + Azure data estate integration that no other platform replicates at enterprise scale.</div>
+      </div>
+    </div>
+
+    <div class="takeaway-card">
+      <div class="tc-num">5</div>
+      <div>
+        <div class="tc-title">Per-Turn Safety &amp; Governance Is Now a Baseline</div>
+        <div class="tc-desc">AWS (InvokeGuardrailChecks), Anthropic (classifiers), Google (Model Armor) all provide per-step, scored safety decisions — not binary blocks. Enterprise buyers are now evaluating fine-grained governance as baseline, not differentiator. Microsoft must demonstrate Azure Content Safety + Microsoft Purview as the unified governance layer across AI and data — not a standalone API.</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ════ DEAL RISK ASSESSMENT ════ -->
+  <h2>Deal Risk Assessment</h2>
+  <table class="risk-table">
+    <thead>
+      <tr>
+        <th>Vendor / Scenario</th>
+        <th>Who Moved</th>
+        <th>Likely Customer Question</th>
+        <th>Recommended Microsoft Response</th>
+        <th>Risk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AWS AgentCore Harness GA</td>
+        <td>AWS</td>
+        <td>"Can Azure deploy agents as fast as AWS's 2-API-call harness?"</td>
+        <td>Azure AI Foundry Agent Service + Prompt Flow reduces agent deployment to hours. Differentiate on M365 data integration and enterprise identity — not raw API simplicity.</td>
+        <td class="risk-high">HIGH</td>
+      </tr>
+      <tr>
+        <td>OpenAI on AWS Bedrock</td>
+        <td>AWS + OpenAI</td>
+        <td>"We want OpenAI models but on AWS — why should we use Azure?"</td>
+        <td>Azure OpenAI Service is Microsoft's exclusive enterprise partnership with OpenAI — VNet isolation, no data training, enterprise SLA. Bedrock's OpenAI integration does not carry the same commitments. "Azure is OpenAI's enterprise cloud."</td>
+        <td class="risk-high">HIGH</td>
+      </tr>
+      <tr>
+        <td>Anthropic Fable 5 Suspension</td>
+        <td>Anthropic</td>
+        <td>"We were evaluating Fable 5 — what now?"</td>
+        <td>Lead with Azure AI Foundry's model stability, GPT-5.5 availability, and regulatory compliance story (FedRAMP, HIPAA). "Azure has never had a model suspended by government directive. Our compliance infrastructure is built for exactly this level of enterprise risk management."</td>
+        <td class="risk-high">OPPORTUNITY for Microsoft</td>
+      </tr>
+      <tr>
+        <td>Google Data Agents Suite (BigQuery/Looker)</td>
+        <td>Google</td>
+        <td>"We're on BigQuery — can Azure match Google's data agents?"</td>
+        <td>Qualify data estate first. If customer is BigQuery-native, acknowledge Google's native depth but counter with Microsoft Fabric's cross-cloud data integration (including Snowflake, Databricks) and M365 data estate. If customer has hybrid data, Fabric wins on breadth.</td>
+        <td class="risk-high">HIGH (BigQuery customers)</td>
+      </tr>
+      <tr>
+        <td>Gemini Enterprise / Gemini Spark</td>
+        <td>Google</td>
+        <td>"Gemini Spark is a 24/7 personal agent — how does Copilot compare?"</td>
+        <td>"Microsoft 365 Copilot is already in your employees' Outlook, Teams, Word, and Excel today — no new deployment, no new UI. Gemini Spark requires setting up connectors to replicate what Copilot does natively." Emphasize time-to-value and M365 seat overlap.</td>
+        <td class="risk-high">HIGH (M365 vs. Workspace)</td>
+      </tr>
+      <tr>
+        <td>OpenAI Partner Network</td>
+        <td>OpenAI</td>
+        <td>"Our SI is now an OpenAI partner — should we follow their lead?"</td>
+        <td>Engage SI partner on Microsoft co-sell incentives. Remind customer that OpenAI's Partner Network is brand new ($150M vs. Microsoft's established program); SI partners have far more Azure delivery experience. "Ask your SI how many Azure AI Foundry production deployments they've run vs. OpenAI."</td>
+        <td class="risk-medium">MEDIUM</td>
+      </tr>
+      <tr>
+        <td>OpenAI Enterprise Spend Controls</td>
+        <td>OpenAI</td>
+        <td>"OpenAI now has enterprise spend controls — is this a reason to use ChatGPT Enterprise instead of Copilot?"</td>
+        <td>Microsoft Azure Cost Management + Copilot usage reporting is already available with M365 admin center integration. Key difference: Azure gives one view across ALL cloud AI spend, not just one vendor's product.</td>
+        <td class="risk-low">LOW</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- ════ WATCH LIST ════ -->
+  <h2>Watch List: Next 2–4 Weeks</h2>
+  <div class="watch-grid">
+    <div class="watch-card">
+      <div class="wc-vendor">🤖 OpenAI</div>
+      <ul>
+        <li>OpenAI Partner Network tier rollout details and certification requirements</li>
+        <li>API pricing adjustments for agent workloads (post-Harness launch by AWS)</li>
+        <li>ChatGPT Business / Enterprise agent capability expansion</li>
+        <li>GPT-5.5 Pro enterprise access broadening</li>
+        <li>Resolution of Agent Builder / Evals deprecation migration path</li>
+      </ul>
+    </div>
+    <div class="watch-card">
+      <div class="wc-vendor">☁️ AWS</div>
+      <ul>
+        <li>AgentCore multi-agent orchestration patterns (agent-to-agent delegation)</li>
+        <li>Per-agent, per-tool cost transparency tools in Bedrock</li>
+        <li>Managed Knowledge Base SaaS connectors (Salesforce, ServiceNow)</li>
+        <li>AgentCore evaluation / A-B testing features</li>
+        <li>OpenAI-powered Bedrock Managed Agents expansion</li>
+      </ul>
+    </div>
+    <div class="watch-card">
+      <div class="wc-vendor">🔵 Google Cloud</div>
+      <ul>
+        <li>Gemini Spark general availability for Gemini Enterprise customers</li>
+        <li>Managed MCP Servers for third-party warehouses (Snowflake, Databricks)</li>
+        <li>Gemini 3.5 Pro release (currently in testing)</li>
+        <li>CodeMender expanded availability on Agent Platform</li>
+        <li>Antigravity integration into Gemini Enterprise app</li>
+      </ul>
+    </div>
+    <div class="watch-card">
+      <div class="wc-vendor">🦋 Anthropic</div>
+      <ul>
+        <li><strong>Critical:</strong> Resolution of US government export control suspension — timeline unknown</li>
+        <li>Broader Project Glasswing trusted access program expansion</li>
+        <li>Biology trusted access program for biomedical researchers (Mythos 5)</li>
+        <li>Pricing adjustments if capacity eases with Fable 5 return</li>
+        <li>Claude Opus 4.8 updates or successor model roadmap</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="report-footer">
+    <span>AI Agent Platform Competitive Intelligence — June 8–22, 2026</span>
+    <span>Generated: June 22, 2026 | Audience: Microsoft Sellers &amp; Solution Architects</span>
+    <span>Sources: All official first-party vendor sources. Verify links before citing to customers.</span>
+  </div>
+
+</div><!-- /container -->
+</body>
+</html>
